@@ -2,73 +2,52 @@ import React, { Component } from 'react';
 import './App.css';
 import data from './data.json';
 
-const VideoThumbnail = (props) => {
-  return <div className="thumbnail">
-    <a href={props.url} target="_blank">
+const VideoThumbnail = (props) => (
+//names are arbitrary for props. just know what they are when you reference them in your code
+    <div className="thumbnail">
+      <a href={props.url}>
       <img src={props.pic} />
-      <h3 style={ {color:"#00adef"} } className="title">{props.name}</h3>
-    </a>
-  </div>
-}
+      </a>
+    </div>
+)
 
-
-class Status extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      watched: false
-    }
-    this.onCheckboxClick = this.onCheckboxClick.bind(this);
-  }
-
-  onCheckboxClick () {
-    this.setState({watched: !this.state.watched})
-  }
-
-  render(){
-    console.log('VID ID:: ', this.props.id)
-    return (
-      <div>
-        <p>{this.state.watched.toString()}</p>
-        <button onClick={this.onCheckboxClick}>CLICK ME</button>
-      </div>
-    )
-  }
-}
+const Title = (props) => (
+  <h3 style={ {color:"#00adef"} } className="title">{props.name}</h3>
+)
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      watched: false
-    }
-    this.someRenderMappingFunc = this.someRenderMappingFunc.bind(this);
-
-  }
-
-someRenderMappingFunc () {
-    return (
-      data.staffPicks.map((vid) => {
-        return (
-          <div key={vid.id}>
-          <VideoThumbnail
-                          url={vid.link}
-                          pic={vid.thumbnail}
-                          name={vid.name}/>
-          <Status id={vid.id}/>
-          </div>
-        )
-      })
-    )
-  }
-
   render() {
     return (
     <div>
-      {this.someRenderMappingFunc()}
+      <h1>React Talk NYU</h1>
+        <VideoThumbnail url={data.staffPicks[0].link}
+                        pic={data.staffPicks[0].thumbnail}/>
+        <Title name="Working With Jigsaw"/>
+
+        <VideoThumbnail url={data.staffPicks[1].link}
+                        pic={data.staffPicks[1].thumbnail}/>
+        <Title name="High Tide"/>
+
+        <VideoThumbnail url={data.staffPicks[2].link}
+                        pic={data.staffPicks[2].thumbnail}/>
+        <Title name="RICHARD TWICE"/>
+
+        <VideoThumbnail url={data.staffPicks[3].link}
+                        pic={data.staffPicks[3].thumbnail}/>
+        <Title name="FATA MORGANA"/>
+
+        <VideoThumbnail url={data.staffPicks[4].link}
+                        pic={data.staffPicks[4].thumbnail}/>
+        <Title name="Every Nite Is Emo Nite"/>
+
+        <VideoThumbnail url={data.staffPicks[5].link}
+                        pic={data.staffPicks[5].thumbnail}/>
+        <Title name="Dahlia (2017)"/>
+
+        <VideoThumbnail url={data.staffPicks[6].link}
+                        pic={data.staffPicks[6].thumbnail}/>
+        <Title name="In a Heartbeat - Animated Short Film"/>        
     </div>
     );
   }
