@@ -9,6 +9,16 @@ $mobile-x: iphoneX
 $tablet: iPad 1, 2, Mini and Air
 $tablet-pro: iPad 3, 4 and Pro 9.7"
 */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
 body {
   margin: 0;
   padding: 0;
@@ -33,18 +43,9 @@ body {
   margin: 10px 20px; }
 
 .thumbnail {
-  position: relative; }
-  .thumbnail:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: 56.25%; }
-  .thumbnail > .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
+  width: 100%; }
+  .thumbnail img {
+    width: 100%; }
 
 .thumbnail-link {
   -webkit-transition: all 350ms ease-in-out;
@@ -58,3 +59,35 @@ body {
     color: #0088bc; }
   .thumbnail-link:visited {
     color: #00adef; }
+
+.status-container {
+  margin-top: 5px; }
+
+.status-watched {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 10px 0 5px; }
+  .status-watched span {
+    color: #1a2e3b;
+    font-size: 16px;
+    font-weight: 700; }
+
+.status-btn {
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  height: 40px;
+  background-color: #00adef;
+  border: 1px solid #00adef;
+  border-radius: 3px; }
+  .status-btn:active, .status-btn:focus, .status-btn:hover {
+    text-decoration: none;
+    background-color: #009bd6;
+    border: 1px solid #0088bc; }
+  .status-btn:visited {
+    background-color: #00adef; }

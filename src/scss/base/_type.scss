@@ -1,3 +1,14 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin DefaultLink($color: $blue) {
   @include LinkTransition();
   color: $color;
@@ -14,3 +25,10 @@
     color: $color;
   }
 }
+
+@mixin BoldText($color: $black, $size: 16px){
+  color: $color;
+  font-size: $size;
+  font-weight: 700;
+}
+

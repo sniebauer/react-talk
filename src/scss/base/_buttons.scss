@@ -1,0 +1,22 @@
+
+@mixin Button($bgColor: $blue, $textColor: $white){
+  @include LinkTransition();
+  @include BoldText($color: $textColor);
+  width: 100%;
+  height: 40px;
+  background-color: $bgColor;
+  border: 1px solid $bgColor;
+  border-radius: 3px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    background-color: darken($bgColor, 5%);
+    border: 1px solid darken($bgColor, 10%);
+  }
+
+  &:visited {
+    background-color: $bgColor;
+  }
+}

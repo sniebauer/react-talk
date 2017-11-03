@@ -6,7 +6,7 @@ const VideoThumbnail = (props) => {
   return <div className="thumbnail">
     <a className="thumbnail-link" href={props.url} target="_blank">
       <img src={props.pic} alt={props.url} />
-      <h3 style={ {fontWeight: 400} } className="thumbnail-title">{props.name}</h3>
+      <h3 style={ {fontWeight: 400} }>{props.name}</h3>
     </a>
   </div>
 }
@@ -29,9 +29,9 @@ class Status extends Component {
   render(){
     console.log('VID ID:: ', this.props.id)
     return (
-      <div>
-        <p>{this.state.watched.toString()}</p>
-        <button onClick={this.onCheckboxClick}>CLICK ME</button>
+      <div className="status-container">
+        <p className="status-watched">Have Viewed: <span>{this.state.watched.toString()}</span></p>
+        <button className="status-btn" onClick={this.onCheckboxClick}>CLICK ME</button>
       </div>
     )
   }

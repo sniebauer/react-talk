@@ -1,1 +1,17 @@
+.status-container {
+  margin-top: 5px;
+}
 
+.status-watched {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 10px 0 5px;
+
+  span {
+    @include BoldText();
+  }
+}
+
+.status-btn {
+  @include Button();
+}
