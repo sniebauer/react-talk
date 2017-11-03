@@ -32,6 +32,20 @@ body {
   flex: flex-basis;
   margin: 10px 20px; }
 
+.thumbnail {
+  position: relative; }
+  .thumbnail:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%; }
+  .thumbnail > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
 .thumbnail-link {
   -webkit-transition: all 350ms ease-in-out;
   -moz-transition: all 350ms ease-in-out;

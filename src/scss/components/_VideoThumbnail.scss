@@ -1,5 +1,5 @@
 .thumbnail {
-
+  @include AspectRatio(16, 9);
 }
 
 .thumbnail-link {
