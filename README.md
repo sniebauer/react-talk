@@ -31,7 +31,7 @@ The tree looks as such:
   master
     +--HTML
     +--propsDemo
-    +--stateDem0
+    +--stateDemo
     +--modularityDemo
     +--styled-elements
 ```
