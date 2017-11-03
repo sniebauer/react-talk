@@ -45,4 +45,4 @@ It was built on top of the create-react-app repository.
 
 ## Who built this project?
 
-[Narmin Shahin](https://github.com/narmeen12) (predominantly) and [Hannah Nordgren](https://github.com/ninjaofawesome).
+[Narmin Shahin](https://github.com/narmeen12) (predominantly) and [Hannah Nordgren](https://github.com/ninjaofawesome), two front end engineers at Vimeo.
