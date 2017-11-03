@@ -15,12 +15,13 @@ someRenderMappingFunc () {
     return (
       data.staffPicks.map((vid) => {
         return (
-          <div>
-          <VideoThumbnail id={vid.id}
-                          url={vid.link}
-                          pic={vid.thumbnail}
-                          name={vid.name}/>
-                        <Status id={vid.id}/>
+          <div className="card">
+            <VideoThumbnail
+              id={vid.id}
+              url={vid.link}
+              pic={vid.thumbnail}
+              name={vid.name}/>
+            <Status id={vid.id} />
           </div>
         )
       })
@@ -29,7 +30,7 @@ someRenderMappingFunc () {
 
   render() {
     return (
-    <div>
+    <div className="card-container">
       {this.someRenderMappingFunc()}
     </div>
     );

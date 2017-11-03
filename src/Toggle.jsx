@@ -18,8 +18,10 @@ class Status extends Component {
   render(){
     console.log('VID ID:: ', this.props.id)
     return (
-      <div>
-        <button onClick={this.onCheckboxClick}>
+      <div className="status-container">
+        <button
+          className="status-btn"
+          onClick={this.onCheckboxClick}>
           { this.state.watched ? "Watched" : "Haven't Watched" }
         </button>
       </div>
