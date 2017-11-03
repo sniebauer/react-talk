@@ -1,28 +1,89 @@
-.App {
+/* .......COLORS....... */
+/* .......FONT FAMILIES....... */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #fff;
+  color: #1a2e3b;
+  font-size: 16px;
+  line-height: 22px; }
+
+.container-title {
   text-align: center;
+  margin-top: 10px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: space-between;
+  width: 90%;
+  margin: 0 auto; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+.card {
+  flex: flex-basis;
+  margin: 10px 20px; }
 
-.App-title {
-  font-size: 1.5em;
-}
+.thumbnail {
+  width: 100%; }
+  .thumbnail img {
+    width: 100%; }
 
-.App-intro {
-  font-size: large;
-}
+.thumbnail-link {
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  color: #00adef;
+  text-decoration: none; }
+  .thumbnail-link:active, .thumbnail-link:focus, .thumbnail-link:hover {
+    text-decoration: none;
+    color: #0088bc; }
+  .thumbnail-link:visited {
+    color: #00adef; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.status-container {
+  margin-top: 5px; }
+
+.status-watched {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 10px 0 5px; }
+  .status-watched span {
+    color: #1a2e3b;
+    font-size: 16px;
+    font-weight: 700; }
+
+.status-btn {
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  height: 40px;
+  background-color: #00adef;
+  border: 1px solid #00adef;
+  border-radius: 3px; }
+  .status-btn:active, .status-btn:focus, .status-btn:hover {
+    text-decoration: none;
+    background-color: #009bd6;
+    border: 1px solid #0088bc; }
+  .status-btn:visited {
+    background-color: #00adef; }
