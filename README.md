@@ -9,7 +9,7 @@ This repository is a code and learn project designed for a NYU Women in Computin
 There is some configuration required before starting the project.  Instructions given are for Mac.
 
 0. For this talk, the text editor of choice is [SublimeText 3](https://www.sublimetext.com/3).  Please download and install it in advance.
-1. Ensure that [Node, NPM](https://treehouse.github.io/installation-guides/mac/node-mac.html) and the [Facebook Create React App Boilerplate] (https://github.com/facebookincubator/create-react-app) are installed on the computer.
+1. Ensure that [Node](https://treehouse.github.io/installation-guides/mac/node-mac.html) and the [Facebook Create React App Boilerplate] (https://github.com/facebookincubator/create-react-app) are installed on the computer.
 2. Clone this repository.
 3. After cloning, `cd` into this directory and run `npm i`.
 4. Start the server locally by running `npm start`.
