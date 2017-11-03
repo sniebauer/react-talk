@@ -1,19 +1,36 @@
 /* .......COLORS....... */
 
 $white: #fff;
-$black: #141414;
-$dk-charcoal: #424242;
-$charcoal: #727272;
-$gray: #a1a1a1;
-$border-gray: #e7e7e7;
+$black: #1a2e3b;
+$dk-charcoal: #8699a6;
+$charcoal: #b3bfc8;
+$gray: #e3e8e9;
+$lt-gray: #eef1f2;
+$pale-gray: #f6f7f8;
 
-$red: #e50914;
-$red-desaturate: #ea3a42;
-
-$blue: #0914e5;
-$blue-desaturate: #3a42ea;
+$blue: #00adef;
+$lt-blue: #e5f7fd;
+$green: #7fc400;
+$lt-green: #f2f9e5;
+$red: #ff4d4d;
+$pink: #ffeded;
 
 /* .......FONT FAMILIES....... */
 $sans-serif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $serif: Georgia, Times, 'Times New Roman', serif;
 
+/* .......MEDIA QUERIES....... */
+/*
+Reference:
+$mobile: iphone5, 5s, 5c, 5SE, 6, 6s, 7 and 8
+$mobile-lg: iphone6+, 7+, 8+
+$mobile-x: iphoneX
+$tablet: iPad 1, 2, Mini and Air
+$tablet-pro: iPad 3, 4 and Pro 9.7"
+*/
+
+$mobile: "(min-width: 320px) and (max-width: 667px) and and (-webkit-min-device-pixel-ratio: 2)";
+$mobile-lg: "(min-width: 414px) and (max-width: 736px) and and (-webkit-min-device-pixel-ratio: 2)";
+$mobile-x: "(min-width: 375px) and (max-width: 812px) and and (-webkit-min-device-pixel-ratio: 3)";
+$tablet: "(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
+$tablet-pro: "(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)";

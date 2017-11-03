@@ -5,7 +5,7 @@ import data from './data.json';
 const VideoThumbnail = (props) => {
   return <div className="thumbnail">
     <a href={props.url} target="_blank">
-      <img src={props.pic} />
+      <img src={props.pic} alt={props.url} />
       <h3 style={ {color:"#00adef"} } className="title">{props.name}</h3>
     </a>
   </div>
@@ -53,7 +53,7 @@ someRenderMappingFunc () {
     return (
       data.staffPicks.map((vid) => {
         return (
-          <div key={vid.id}>
+          <div className="card" key={vid.id}>
           <VideoThumbnail
                           url={vid.link}
                           pic={vid.thumbnail}
@@ -67,7 +67,7 @@ someRenderMappingFunc () {
 
   render() {
     return (
-    <div>
+    <div className="card-container">
       {this.someRenderMappingFunc()}
     </div>
     );
