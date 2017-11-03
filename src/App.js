@@ -4,9 +4,9 @@ import data from './data.json';
 
 const VideoThumbnail = (props) => {
   return <div className="thumbnail">
-    <a href={props.url} target="_blank">
+    <a className="thumbnail-link" href={props.url} target="_blank">
       <img src={props.pic} alt={props.url} />
-      <h3 style={ {color:"#00adef"} } className="title">{props.name}</h3>
+      <h3 style={ {fontWeight: 400} } className="thumbnail-title">{props.name}</h3>
     </a>
   </div>
 }

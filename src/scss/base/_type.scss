@@ -1,0 +1,16 @@
+@mixin DefaultLink($color: $blue) {
+  @include LinkTransition();
+  color: $color;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: darken($color, 10%);
+  }
+
+  &:visited {
+    color: $color;
+  }
+}

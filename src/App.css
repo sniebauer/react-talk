@@ -31,3 +31,16 @@ body {
 .card {
   flex: flex-basis;
   margin: 10px 20px; }
+
+.thumbnail-link {
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  color: #00adef;
+  text-decoration: none; }
+  .thumbnail-link:active, .thumbnail-link:focus, .thumbnail-link:hover {
+    text-decoration: none;
+    color: #0088bc; }
+  .thumbnail-link:visited {
+    color: #00adef; }
