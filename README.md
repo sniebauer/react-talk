@@ -8,6 +8,7 @@ This repository is a code and learn project designed for a NYU Women in Computin
 
 There is some configuration required before starting the project.  Instructions given are for Mac.
 
+0. For this talk, the text editor of choice is [SublimeText 3](https://www.sublimetext.com/3).  Please download and install it in advance.
 1. Ensure that [Node, NPM](https://treehouse.github.io/installation-guides/mac/node-mac.html) and the [Facebook Create React App Boilerplate] (https://github.com/facebookincubator/create-react-app) are installed on the computer.
 2. Clone this repository.
 3. After cloning, `cd` into this directory and run `npm i`.
@@ -17,7 +18,7 @@ There is some configuration required before starting the project.  Instructions 
 
 This repository has different branches to illustrate different concepts in react.  They are:
 
-* Master: The basic concepts of React, a rough-and-ready version for first timers using React
+* Master: The advanced concepts of this React demonstration for users to see and try out.
 * HTML:  The HTML translation of this project, using no React concepts.
 * propsDemo:  Exemplifies the concept of passing data downwards to child components via `props`.
 * stateDemo:  Exemplifies the concept of state, which can be used by multiple components to update the DOM.
