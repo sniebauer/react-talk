@@ -4,7 +4,11 @@ import data from './data.json';
 
 const VideoThumbnail = (props) => {
   return <div className="thumbnail">
-    <a href={props.url} target="_blank">
+    <a
+      className="thumbnail-link"
+      href={props.url}
+      target="_blank"
+    >
       <img src={props.pic} />
       <h3 style={ {color:"#00adef"} } className="title">{props.name}</h3>
     </a>
@@ -29,9 +33,9 @@ class Status extends Component {
   render(){
     console.log('VID ID:: ', this.props.id)
     return (
-      <div>
-        <p>{this.state.watched.toString()}</p>
-        <button onClick={this.onCheckboxClick}>CLICK ME</button>
+      <div className='status-container'>
+        <p className='status-watched'>Have Watched: <span>{this.state.watched.toString()}</span></p>
+        <button className='status-btn' onClick={this.onCheckboxClick}>CLICK ME</button>
       </div>
     )
   }
@@ -53,11 +57,15 @@ someRenderMappingFunc () {
     return (
       data.staffPicks.map((vid) => {
         return (
-          <div key={vid.id}>
+          <div
+            className="card"
+            key={vid.id}
+          >
           <VideoThumbnail
-                          url={vid.link}
-                          pic={vid.thumbnail}
-                          name={vid.name}/>
+            url={vid.link}
+            pic={vid.thumbnail}
+            name={vid.name}
+          />
           <Status id={vid.id}/>
           </div>
         )
@@ -67,7 +75,7 @@ someRenderMappingFunc () {
 
   render() {
     return (
-    <div>
+    <div className="card-container">
       {this.someRenderMappingFunc()}
     </div>
     );
